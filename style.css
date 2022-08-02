@@ -27,7 +27,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     flex-direction: row;
     width: 100vw;
-    height: 7.5vh;
+    height: 7.8vh;
     position: fixed;
     background-color: var(--primary-white);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -57,7 +57,7 @@
     position: relative;
 }
 .logo{
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     cursor: pointer;
     margin-top: 0.5rem;
 }
@@ -70,7 +70,7 @@
   padding: 1.3rem 9rem;
   border-radius: 2rem;
   display: flex;
-  right: 1rem;
+  right: 1.5rem;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -94,13 +94,80 @@ text-align: left;
 }
 
 ::placeholder{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--primary-grey);
     font-weight: 300;
 }
 
 /* header-part-2*/
 
-.header-part-2{
-    
+.center-items{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1.2rem;
 }
+
+.center-item{
+    font-size: 1.7rem;
+    font-weight: 200;
+    cursor: pointer;
+    color: var(--primary-grey);
+}
+.center-item i{
+    padding: 0.6rem 2.5rem;
+    border: none;
+}
+.center-item.active i {
+    color: var(--primary-blue);
+    border-bottom: solid 3.5px var(--primary-blue);
+    margin-top: 10px;
+}
+.center-item:hover i{
+    background-color: var(--secondary-white);
+    border-radius: 5px;
+}
+.center-item.active:hover i {
+    background-color: inherit;
+    border-radius: 0;
+}
+
+/* tooltip-header-2 */
+
+.center-item:nth-child(3) .tooltip .tooltiptext{
+    width: 90%;
+    left: 5%;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition: all 0.1s ease;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0px;
+    width:60%;
+    top: 110%;
+    left: 20%;
+    position: absolute;
+    z-index: 1;
+    transition-delay: 0.1s;
+  }
+  
+  
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* header-part-3 */
+
