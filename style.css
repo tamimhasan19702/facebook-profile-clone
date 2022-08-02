@@ -11,10 +11,12 @@
 
  --primary-white: RGB(255, 255, 255);
  --secondary-white: RGB(240, 242, 245);
+ --darkish-white: rgb(228, 228, 228);
  --primary-blue: RGB(10, 130, 236);
  --secondary-blue: RGB(27, 116, 228);
  --primary-grey: RGB(102, 104, 108);
  --text-black: RGB(5, 5, 5);
+ --light-blue: rgba(0, 110, 255, 0.108)
 
  --Primary-box-shadow:16px 10px 23px 16px rgba(0,0,0,0.45);
  
@@ -88,6 +90,7 @@ left: 2.8rem;
 border: none;
 text-align: left;
 }
+
 .search:focus{
   border: none;
   outline: none;
@@ -132,6 +135,48 @@ gap: 1.2rem;
     border-radius: 0;
 }
 
+/* header-part-3 */
+
+.left-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+.left-item{
+    color: var(--text-black);
+    background-color: var(--secondary-white);
+    border-radius: 80%;
+    margin-top: -0.6rem;
+}
+.left-item:hover{
+    background-color: var(--darkish-white);
+}
+.left-item:active{
+    transform: scale(0.95);
+}
+.left-item i{
+    padding: 0.6rem 0.6rem;
+    font-size: 1.4rem;
+}
+.left-item:nth-child(4){
+    background-color: transparent;
+    padding: .5rem .6rem;
+}
+.left-item:nth-child(4) img{
+    margin-right: -1.5rem;
+    margin-left: -.2rem;
+    margin-top: 0.6rem;
+    width: 125%;
+    border-radius: 50%;   
+}
+.left-item.active{
+    color: var(--primary-blue);
+    background-color: rgba(0, 110, 255, 0.108);
+}
+
+
 /* tooltip-header-2 */
 
 .center-item:nth-child(3) .tooltip .tooltiptext{
@@ -148,26 +193,40 @@ gap: 1.2rem;
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    background-color: black;
+    background-color: rgb(30, 27, 27);
     color: #fff;
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 500;
     text-align: center;
-    border-radius: 6px;
-    padding: 8px 0px;
+    border-radius: 10px;
+    padding: 6px 0px;
     width:60%;
-    top: 110%;
+    top: 115%;
     left: 20%;
     position: absolute;
     z-index: 1;
     transition-delay: 0.1s;
   }
   
-  
 
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
 
-/* header-part-3 */
-
+  .left-item .tooltip .tooltiptext{
+    width: 110%;
+    left: 0%;
+  }
+  .left-item:nth-child(2) .tooltip .tooltiptext{
+    width: 170%;
+    left: -10%;
+  }
+  .left-item:nth-child(3) .tooltip .tooltiptext{
+    width: 200%;
+    left: -20%;
+  }
+  .left-item:nth-child(4) .tooltip .tooltiptext{
+    width: 180%;
+    left: -40%;
+    top: 100%;
+  }
