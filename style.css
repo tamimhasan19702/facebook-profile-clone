@@ -157,8 +157,8 @@ gap: 1.2rem;
     transform: scale(0.95);
 }
 .left-item i{
-    padding: 0.6rem 0.6rem;
-    font-size: 1.4rem;
+    padding: 0.4rem 0.4rem;
+    font-size: 1.7rem;
 }
 .left-item:nth-child(4){
     background-color: transparent;
@@ -193,7 +193,7 @@ gap: 1.2rem;
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    background-color: rgb(30, 27, 27);
+    background-color: rgba(30, 27, 27,0.8);
     color: #fff;
     font-size: 11px;
     font-weight: 500;
@@ -218,15 +218,32 @@ gap: 1.2rem;
     left: 0%;
   }
   .left-item:nth-child(2) .tooltip .tooltiptext{
-    width: 170%;
-    left: -10%;
+    width: 200%;
+    left: -30%;
   }
   .left-item:nth-child(3) .tooltip .tooltiptext{
-    width: 200%;
-    left: -20%;
+    width: 240%;
+    left: -50%;
   }
   .left-item:nth-child(4) .tooltip .tooltiptext{
-    width: 180%;
+    width: 200%;
     left: -40%;
     top: 100%;
   }
+
+  /* section-1 starts */
+
+
+
+
+.header-cover-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cover-img{
+    width: 1100px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
