@@ -12,7 +12,9 @@
  --primary-white: RGB(255, 255, 255);
  --secondary-white: RGB(240, 242, 245);
  --darkish-white: rgb(228, 228, 228);
+ --darkish-white-dark: RGB(228, 230, 235);
  --primary-blue: RGB(10, 130, 236);
+ --primary-blue-dark: RGB(27, 116, 228);
  --secondary-blue: RGB(27, 116, 228);
  --primary-grey: RGB(102, 104, 108);
  --text-black: RGB(5, 5, 5);
@@ -276,7 +278,7 @@ gap: 1.2rem;
 
 .header-main{
  display: grid;
- grid-template-columns: 1fr 3fr 1fr;   
+ grid-template-columns: 1fr 3fr 1.5fr;   
  width: 1100px;
  height: 200px;
  justify-content: center;
@@ -290,26 +292,26 @@ gap: 1.2rem;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 .profile-img{
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 0;
     right: 0;
     border-radius: 50%;
-    width: 95%;
-    height: 100%;
+    width: 96%;
+    height: 95%;
     border: 4px solid #fff;
     
 }
 .overlay {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 0;
     right: 0;
-    width: 95%;
-    height: 100%;
+    width: 96%;
+    height: 95%;
     border-radius: 50%;
     transform: scale(1);
     transition: .3s ease;
@@ -327,8 +329,8 @@ gap: 1.2rem;
     margin: auto 0;
     margin: auto 0;
     position: absolute;
-    left: 9.5rem;
-    bottom: 2.5rem;
+    left: 9rem;
+    bottom: 4rem;
 }
 
 .profile-icon i{
@@ -441,3 +443,46 @@ gap: 1.2rem;
 .overlay-small-img:hover{
 background-color: rgba(0, 0, 0, 0.508);
 }
+
+/* ---header-buttons */
+
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6rem;
+    cursor: pointer;
+}
+.header-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin-left: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+ }
+ .header-icon{
+    font-size: 1.5rem;
+    margin-right: 5px;
+ }
+ .header-button-1{
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    transition: background-color 0.3s ease;
+ }
+ .header-button-2{
+    background-color: var(--darkish-white);
+    color: var(--text-black);
+    transition: background-color 0.3s ease;
+ }
+ .header-button-1:hover{
+ background-color: var(--primary-blue-dark);
+ }
+ .header-button-2:hover{
+    background-color: var(--darkish-white-dark);
+ }
