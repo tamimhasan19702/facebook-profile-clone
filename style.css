@@ -361,53 +361,83 @@ gap: 1.2rem;
 .header-small-img{
     position: absolute;
     display: inline;  
-    left: 16rem;
+    left: 15.5rem;
     top: 7rem;
+    cursor: pointer;
 }
 .header-small-img img{ 
     width: 70%;
+    height: 85%;
     border-radius: 50%;
     border: 2px solid var(--primary-white);
     cursor: pointer;
+    z-index: 11;
 }
 
 .header-small-img img:nth-child(1){
     visibility: hidden;
-    z-index: 10;
+    left: 0rem;
 }
 .header-small-img img:nth-child(2){
   position: absolute;
   left: 0rem;
-  z-index: 5;
+  z-index: 10;
   
 }
 .header-small-img img:nth-child(3){
     position: absolute;
     left: 2rem;
-    z-index: 4;
+    z-index: 9;
 }
 .header-small-img img:nth-child(4){
     position: absolute;
     left: 4rem;
-    z-index: 3;
+    z-index: 8;
 }
 .header-small-img img:nth-child(5){
     position: absolute;  
     left: 6rem;
-    z-index: 2;
+    z-index: 7;
 }
 .header-small-img img:nth-child(6){  
     position: absolute;
     left: 8rem; 
-    z-index: 1;
+    z-index: 6;
 }
 .header-small-img img:nth-child(7){  
     position: absolute;
     left: 10rem; 
-    z-index: 0;
+    z-index: 5;
 }
 .header-small-img img:nth-child(8){  
     position: absolute;
     left: 12rem; 
-    z-index: -1;
+    z-index: 4;
+    cursor: pointer;
+}
+.header-small-img img:nth-child(9){  
+    position: absolute;
+    left: 14rem; 
+    z-index: 2;
+}
+.overlay-small-img{
+    position: absolute;
+    cursor: pointer;
+    left: 14rem;
+    z-index: 3;
+    bottom: 0.5rem;
+    right: 0;
+    width: 70%;
+    height: 85%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--darkish-white);
+    border-radius: 50%;
+    transform: scale(1);
+    transition: .3s ease;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 1;
+}
+.overlay-small-img:hover{
+background-color: rgba(0, 0, 0, 0.508);
 }
