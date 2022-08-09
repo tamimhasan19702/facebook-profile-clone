@@ -236,9 +236,14 @@ gap: 1.2rem;
 
   /* section-1 starts */
  
+  .section-1{
+    background: #fff;
+    box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
 /* cover section */
 .header-cover-img{
-    background: linear-gradient(360deg, rgba(255,255,255,0.8410714627647934) 31%, rgba(33, 25, 48, 0.917) 92%);;
+    background: linear-gradient(360deg, rgba(255,255,255,0.8410714627647934) 40%, rgba(33, 25, 48, 0.917) 92%);
     display: flex;
     justify-content: center;
     align-items: center;
